@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             images = data;
-            displayImages(images);
+            //displayImages(images);
         });
     
     // Filtrar y mostrar imagen
