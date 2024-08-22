@@ -4,14 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Silencio Que Habla</title>
+   
     <!-- Bootstrap CSS -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="favicon.png" type="image/x-icon">
 
     <style type="text/css">
+
+*{
+          margin: 0;
+          padding: 0;
+        }
+        body{
+          margin: 0 ;
+          padding: 0;
+          height: 100vh;
+        
+      
+      }
+      
+
+        #imgcontainer{
+          margin: auto;
+          padding: 0 ;
+          max-width: 100vh;
+          max-height: 100vh;
+      
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
       body {
+        
         background-color:rgb(241, 215, 181);
       }
 
@@ -34,6 +62,9 @@
       img{
         box-shadow: 0 0 .625rem rgb(61, 61, 61);
       }
+
+
+     
     </style>
     <script src="js.js"></script>
     <!-- Your JavaScript file -->
@@ -48,8 +79,9 @@
               type="text"
               id="search"
               class="form-control"
-              placeholder="Search for your piece..."
+              placeholder="Search for your minted piece..."
               aria-label="Search"
+              autocomplete="off"
             />
             <div class="input-group-append">
               <!-- <button class="btn btn-outline-secondary" type="button">
@@ -61,7 +93,7 @@
       </div>
 
       <!-- Gallery Div -->
-      <div class="gallery d-flex justify-content-center flex-wrap">
+      <div id="imgcontainer" class="gallery d-flex justify-content-center flex-wrap">
         <!-- Images will be displayed here -->
       </div>
     </div>
