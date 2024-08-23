@@ -22,8 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const filteredImage = images.find(image =>
-            image.title.toLowerCase().includes(searchTerm) ||
-            image.description.toLowerCase().includes(searchTerm)
+            image.title.toLowerCase().includes(searchTerm)
         );
         displayImage(filteredImage);
     });
